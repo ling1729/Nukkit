@@ -84,6 +84,7 @@ public class Item implements Cloneable, BlockID, ItemID {
     public static void init() {
         if (list == null) {
             list = new Class[65535];
+            list[SHULKER_BOX] = ItemShulkerBox.class; //218
             list[IRON_SHOVEL] = ItemShovelIron.class; //256
             list[IRON_PICKAXE] = ItemPickaxeIron.class; //257
             list[IRON_AXE] = ItemAxeIron.class; //258
@@ -269,7 +270,7 @@ public class Item implements Cloneable, BlockID, ItemID {
 
             list[ELYTRA] = ItemElytra.class; //444
 
-            //TODO: list[SHULKER_SHELL] = ItemShulkerShell.class; //445
+            list[SHULKER_SHELL] = ItemShulkerShell.class; //445
             list[BANNER] = ItemBanner.class; //446
             list[TOTEM] = ItemTotem.class; //450
             
